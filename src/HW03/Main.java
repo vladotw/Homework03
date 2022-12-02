@@ -154,19 +154,23 @@ public class Main {
         System.out.println();
 
         int totalWeightLostNeedKg = 7;  // всего нужно сбросить в кг
-        int weightLostPerDay1 = 250;    // 1-й вариант похужения г/д
-        int weightLostPerDay2 = 500;    // 2-й вариант похужения г/д
+        double weightLostPerDay1 = 250;    // 1-й вариант похужения г/д
+        double weightLostPerDay2 = 500;    // 2-й вариант похужения г/д
+
+        double weightLostPerDayAverage = (weightLostPerDay1 + weightLostPerDay2) /2;
 
         int totalWeightLostNeedG = totalWeightLostNeedKg * 1000; // всего нужно сбросить в г
-        int daysNeed1 = totalWeightLostNeedG / weightLostPerDay1; // к-во дней при похудении
+        double daysNeed1 = totalWeightLostNeedG / weightLostPerDay1; // к-во дней при похудении
                                                                   // на 250 г/д
-        int daysNeed2 = totalWeightLostNeedG / weightLostPerDay2; // к-во дней при похудении
+        double daysNeed2 = totalWeightLostNeedG / weightLostPerDay2; // к-во дней при похудении
                                                                   // на 500 г/д
+        double daysNeedAverage = totalWeightLostNeedG / weightLostPerDayAverage;
 
         System.out.println("При похудении на 250 г в день процесс займёт " + daysNeed1 +
                             " дней");
         System.out.println("При похудении на 500 г в день процесс займёт " + daysNeed2 +
                 " дней");
+        System.out.println("В среднем на похудение уйдёт " + daysNeedAverage + " дней");
         System.out.println();
         System.out.println();
 
