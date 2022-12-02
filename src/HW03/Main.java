@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         task1();
-        
+        task2();
     }
     public static void task1(){
 
@@ -28,5 +28,28 @@ public class Main {
         System.out.println();
         System.out.println();
     }
+    public  static void task2(){
+        System.out.println("Задача 2");
+        System.out.println();
 
+        double one = 27.12D;
+        long two = 987678965549L;
+        float three = 2.786F;
+        short four = 569;
+        int five = -159;
+        int six = 27897;
+        byte seven = 67;
+
+        System.out.println(one);
+        System.out.println(two);
+        System.out.println(three);
+        System.out.println(four);
+        System.out.println(five);
+        System.out.println(six);
+        System.out.println(seven);
+
+        System.out.println();
+        System.out.println();
+
+    }
 }
