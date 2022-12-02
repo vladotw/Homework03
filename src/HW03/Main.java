@@ -10,6 +10,7 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
     public static void task1(){
 
@@ -169,5 +170,29 @@ public class Main {
         System.out.println();
         System.out.println();
 
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        System.out.println();
+
+        double salaryMasha = 67760; // нынешняя ЗП Маши
+        double salaryDenis = 83690; // нынешняя ЗП Дениса
+        double salaryKristina = 76230; // нынешняя ЗП Кристины
+
+        double raisSalaryMasha = salaryMasha + ((salaryMasha / 100) * 10);
+        double raisSalaryDenis = salaryDenis + ((salaryDenis / 100) * 10);
+        double raisSalaryKristina = salaryKristina + ((salaryKristina / 100) * 10);
+
+        double yearIncomeDifferenceMasha = (raisSalaryMasha - salaryMasha) * 12;
+        double yearIncomeDifferenceDenis = (raisSalaryDenis - salaryDenis) * 12;
+        double yearIncomeDifferenceKristina = (raisSalaryKristina - salaryKristina) * 12;
+
+        System.out.println("Маша теперь получает " + raisSalaryMasha + " рублей. Годовой " +
+                "доход вырос на " + yearIncomeDifferenceMasha + " рублей.");
+        System.out.println("Денис теперь получает " + raisSalaryDenis + " рублей. Годовой " +
+                "доход вырос на " + yearIncomeDifferenceDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + raisSalaryKristina + " рублей. " +
+                "Годовой доход вырос на " + yearIncomeDifferenceKristina + " рублей.");
     }
 }
