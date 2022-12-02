@@ -6,6 +6,8 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+
     }
     public static void task1(){
 
@@ -69,6 +71,33 @@ public class Main {
              " листов бумаги");
         System.out.println();
         System.out.println();
-
     }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        System.out.println();
+
+        var productivityInTwoMinutes = 16; // Производительность за 2 минуты
+
+        var productivityInOneMinute = productivityInTwoMinutes / 2;
+
+        var productivityInTwentyMinutes = productivityInOneMinute * 20;
+        System.out.println("За 20 минут машина произвела " + productivityInTwentyMinutes + " штук " +
+                "бутылок");
+
+        var minutesPerDay = 24 * 60;
+        var productivityInDay = productivityInOneMinute * minutesPerDay;
+        System.out.println("За сутки машина произвела " + productivityInDay + " штук бутылок");
+
+        var productivityIn3Days = productivityInDay * 3;
+        System.out.println("За 3 дня машина произвела " + productivityIn3Days + " штук бутылок");
+
+        var productivityInMonth = productivityInDay * 30;
+        System.out.println("За месяц машина произвела " + productivityInMonth + " штук бутылок");
+
+        System.out.println();
+        System.out.println();
+    }
+
+
 }
