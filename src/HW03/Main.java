@@ -137,7 +137,7 @@ public class Main {
         int eggs = 4;                       // к-во яиц
         int oneEggWieght = 70;              // вес одного яйца
 
-        double milkWeight1G = milkWeight100G / 100;
+        double milkWeight1G = milkWeight100G / 1000D;
 
         double totalWeightG = (bananasNumbers * oneBananaWeight) + (milk * milkWeight1G) +
                 (iceCream * iceCream1BriquetteWeight) + (eggs * oneEggWieght);
