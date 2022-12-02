@@ -171,6 +171,7 @@ public class Main {
         System.out.println("При похудении на 500 г в день процесс займёт " + daysNeed2 +
                 " дней");
         System.out.println("В среднем на похудение уйдёт " + daysNeedAverage + " дней");
+
         System.out.println();
         System.out.println();
 
