@@ -7,7 +7,7 @@ public class Main {
         task2();
         task3();
         task4();
-
+        task5();
     }
     public static void task1(){
 
@@ -99,5 +99,25 @@ public class Main {
         System.out.println();
     }
 
+    public static void task5() {
+        System.out.println("Задача 5");
+        System.out.println();
 
+        var totalCansNumber = 120;
+        var whitePaintConsumptionPer1Class = 2;
+        var brownPaintConsumptionPer1Class = 4;
+
+        var totalClassesNumber = totalCansNumber / (whitePaintConsumptionPer1Class +
+                brownPaintConsumptionPer1Class); // Количество классов в школе
+
+        var totalWhitePaint = totalClassesNumber * whitePaintConsumptionPer1Class;
+        var totalBrownPaint = totalClassesNumber * brownPaintConsumptionPer1Class;
+
+        System.out.println("В школе, где " + totalClassesNumber + " классов, нужно " +
+                totalWhitePaint + " банок белой краски и " + totalBrownPaint +
+                " банок коричневой краски");
+
+        System.out.println();
+        System.out.println();
+    }
 }
