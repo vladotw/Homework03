@@ -8,6 +8,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1(){
 
@@ -119,5 +120,27 @@ public class Main {
 
         System.out.println();
         System.out.println();
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        System.out.println();
+
+        int bananasNumbers = 5;             // к-во бананов
+        int oneBananaWeight = 80;           // вес одного банана
+        int milk = 200;                     // всего мл молока
+        double milkWeight100G = 105D;       // вес 100 мл молока
+        int iceCream = 2;                   // к-во брикетов мороженого
+        int iceCream1BriquetteWeight = 100; // вес одного брикета мороженого
+        int eggs = 4;                       // к-во яиц
+        int oneEggWieght = 70;              // вес одного яйца
+
+        double milkWeight1G = milkWeight100G / 100;
+
+        double totalWeightG = (bananasNumbers * oneBananaWeight) + (milk * milkWeight1G) +
+                (iceCream * iceCream1BriquetteWeight) + (eggs * oneEggWieght);
+        double totalWeightKg = totalWeightG / 1000;
+        System.out.println("Общий вес спортзавтрака равен " + totalWeightG + " г (" + totalWeightKg +
+                " кг)");
     }
 }
