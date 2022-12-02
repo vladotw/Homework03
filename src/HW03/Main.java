@@ -5,6 +5,7 @@ public class Main {
 
         task1();
         task2();
+        task3();
     }
     public static void task1(){
 
@@ -48,6 +49,24 @@ public class Main {
         System.out.println(six);
         System.out.println(seven);
 
+        System.out.println();
+        System.out.println();
+    }
+
+    public static void task3(){
+        System.out.println("Задача 3");
+        System.out.println();
+
+        var studentsInClass1 = 23;
+        var studentsInClass2 = 27;
+        var studentsInClass3 = 30;
+        var totalSheetsNumber = 480;
+
+        var totalStudentsNumber = studentsInClass1 + studentsInClass2 + studentsInClass3;
+        var SheetsNumberForOneStudent = totalSheetsNumber / totalStudentsNumber;
+
+        System.out.println("На каждого ученика рассчитано " + SheetsNumberForOneStudent +
+             " листов бумаги");
         System.out.println();
         System.out.println();
 
