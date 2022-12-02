@@ -9,6 +9,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1(){
 
@@ -142,5 +143,31 @@ public class Main {
         double totalWeightKg = totalWeightG / 1000;
         System.out.println("Общий вес спортзавтрака равен " + totalWeightG + " г (" + totalWeightKg +
                 " кг)");
+
+        System.out.println();
+        System.out.println();
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        System.out.println();
+
+        int totalWeightLostNeedKg = 7;  // всего нужно сбросить в кг
+        int weightLostPerDay1 = 250;    // 1-й вариант похужения г/д
+        int weightLostPerDay2 = 500;    // 2-й вариант похужения г/д
+
+        int totalWeightLostNeedG = totalWeightLostNeedKg * 1000; // всего нужно сбросить в г
+        int daysNeed1 = totalWeightLostNeedG / weightLostPerDay1; // к-во дней при похудении
+                                                                  // на 250 г/д
+        int daysNeed2 = totalWeightLostNeedG / weightLostPerDay2; // к-во дней при похудении
+                                                                  // на 500 г/д
+
+        System.out.println("При похудении на 250 г в день процесс займёт " + daysNeed1 +
+                            " дней");
+        System.out.println("При похудении на 500 г в день процесс займёт " + daysNeed2 +
+                " дней");
+        System.out.println();
+        System.out.println();
+
     }
 }
